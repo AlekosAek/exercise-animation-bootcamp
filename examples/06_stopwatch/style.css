@@ -1,0 +1,60 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEEEEE;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  border: 16px solid #D3D3D3;
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+  align-content: center;
+}
+
+.dot {
+  background-color: #888888;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  left: 50%;
+  bottom: 20%;
+}
+
+.ms {
+  position: relative;
+  border-left: 7px solid #5a5959;
+  height: 150px;
+  left: 64%;
+  bottom: 9%;
+  transform: rotateZ(50deg);
+  display: inline-block;
+}
+
+.s {
+  position: absolute;
+  left: 50%;
+  border-left: 5px solid red;
+  height: 150px;
+  animation: second 60s linear infinite;
+  transform: rotateZ(90deg);
+  padding: 0;
+  bottom: 50%;
+}
+
+@keyframes second {
+  from { 
+      transform: rotateZ(0deg);
+      transform-origin: center bottom;
+  }
+
+  to {
+      transform: rotateZ(360deg); 
+      transform-origin: center bottom;
+  }
+}

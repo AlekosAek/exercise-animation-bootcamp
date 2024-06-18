@@ -1,0 +1,29 @@
+body{
+  background-color: darkblue;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  perspective: 400px;
+}
+
+main{
+  margin-top: 20vh;
+  width: 70vw;
+  height: 80vh;
+  position: absolute;
+  transform-origin: 50% 100%;
+  animation: crawler 60s linear;
+}
+
+@keyframes crawler{
+  from{
+    top:0;
+    transform:translateZ(0) rotateX(20deg);
+    
+  }
+  to{
+    top: -7500px;
+    transform: translateZ(-2500px) rotateX(30deg);
+  }
+}
