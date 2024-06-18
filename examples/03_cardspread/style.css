@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+
+}
+
+body {
+  display: flex;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 17rem;
+  width: 12rem;
+  border-radius: 4px;
+  position: absolute;
+  transform-origin: center bottom;
+
+}
+
+article.card:nth-of-type(1) {
+  background-color: #E9B6D1;
+  z-index: 9;
+}
+
+article.card:nth-of-type(2) {
+  background-color: #BC7EEE;
+  z-index: 8;
+}
+
+article.card:nth-of-type(3) {
+  background-color: #6B77F4;
+  z-index: 7;
+}
+
+article.card:nth-of-type(4) {
+  background-color: #85E8FA;
+  z-index: 6;
+}
+
+article.card:nth-of-type(5) {
+  background-color: #69CA8D;
+  z-index: 5;
+}
+
+article.card:nth-of-type(6) {
+  background-color: #8AFB62;
+  z-index: 4;
+}
+
+article.card:nth-of-type(7) {
+  background-color: #F9F75E;
+  z-index: 3;
+}
+
+article.card:nth-of-type(8) {
+  background-color: #F0973D;
+  z-index: 2;
+}
+
+article.card:nth-of-type(9) {
+  background-color: #EA3426;
+  z-index: 1;
+}
+
+section:hover 
+{
+      .card{
+        transition: all 1s ease-in;
+      }
+    
+  article.card:nth-of-type(1) {
+    transform: translateX(-2rem) rotate(-28deg);
+    transform-origin: center bottom;
+
+
+  }
+
+  article.card:nth-of-type(2) {
+    transform: translateX(-1.5rem) rotate(-21deg);
+    transform-origin: center bottom;
+
+  }
+
+  article.card:nth-of-type(3) {
+    transform: translateX(-1rem) rotate(-14deg);
+    transform-origin: center bottom;
+
+
+  }
+
+  article.card:nth-of-type(4) {
+    transform: translateX(-0.5rem) rotate(-7deg);
+    transform-origin: center bottom;
+
+  }
+
+  article.card:nth-of-type(5) {
+    transform: translateX(0rem) rotate(0deg);
+    transform-origin: center bottom;
+
+  }
+
+  article.card:nth-of-type(6) {
+    transform: translateX(0.5rem) rotate(7deg);
+    transform-origin: center bottom;
+
+  }
+
+  article.card:nth-of-type(7) {
+    transform: translateX(1rem) rotate(14deg);
+    transform-origin: center bottom;
+
+
+  }
+
+  article.card:nth-of-type(8) {
+    transform: translateX(1.5rem) rotate(21deg);
+    transform-origin: center bottom;
+
+
+  }
+
+  article.card:nth-of-type(9) {
+    transform: translateX(2rem) rotate(28deg);
+    transform-origin: center bottom;
+
+  }
+}
